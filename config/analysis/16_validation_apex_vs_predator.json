@@ -1,0 +1,15 @@
+{
+  "experiment_name": "Validation: Apex Hunt vs. Predator Reproduction",
+  "x_param": "hunt_success_chance_apex", "x_range": [0.5, 0.65, 15], "x_label": "Seal Hunt Success Chance",
+  "y_param": "reproduction_threshold_predator", "y_range": [38, 48, 15], "y_label": "SmallFish Reproduction Threshold",
+  "dashboards": [
+    { "dashboard_name": "Core_Outcomes_Validation", "graphs": [
+        {"type": "fitness", "title": "Overall Fitness Score"},
+        {"type": "outcome", "title": "Ecosystem Outcome"}
+    ]},
+    { "dashboard_name": "Resilience_Validation", "graphs": [
+        {"type": "heatmap", "data_key": "pred_min", "cmap": "Blues", "title": "Min Predator Population"},
+        {"type": "heatmap", "data_key": "apex_min", "cmap": "Reds", "title": "Min Apex Population"}
+    ]}
+  ]
+}

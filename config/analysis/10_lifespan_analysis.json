@@ -1,0 +1,11 @@
+{
+  "experiment_name": "Lifespans: Predator vs. Prey",
+  "x_param": "max_lifespan_predator", "x_range": [400, 900, 15], "x_label": "Predator Max Lifespan",
+  "y_param": "max_lifespan_prey", "y_range": [80, 250, 15], "y_label": "Prey Max Lifespan",
+  "dashboards": [
+    {"dashboard_name": "Core_Outcomes", "graphs": [
+        {"type": "fitness", "title": "Overall Fitness Score"},
+        {"type": "oscillation", "title": "Number of Oscillation Cycles"}
+    ]}
+  ]
+}

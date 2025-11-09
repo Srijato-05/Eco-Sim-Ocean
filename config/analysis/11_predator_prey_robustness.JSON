@@ -1,0 +1,20 @@
+{
+  "experiment_name": "Robustness: Predator Metabolism vs. Prey Metabolism",
+  "x_param": "metabolic_rate_predator",
+  "x_range": [0.07, 0.12, 15],
+  "x_label": "SmallFish Metabolic Rate (Lower is more efficient)",
+  "y_param": "metabolic_rate_prey",
+  "y_range": [0.28, 0.35, 15],
+  "y_label": "Zooplankton Metabolic Rate (Lower is more efficient)",
+  "dashboards": [
+    {
+      "dashboard_name": "Stability_Outcomes",
+      "graphs": [
+        {"type": "outcome", "title": "Region of Stability (Stable vs. Collapse)"},
+        {"type": "fitness", "title": "Overall Fitness Score (Log Scale)"},
+        {"type": "heatmap", "data_key": "pred_min", "cmap": "Blues", "title": "Predator Population Resilience (Min Pop)"},
+        {"type": "heatmap", "data_key": "prey_min", "cmap": "Greens", "title": "Prey Population Resilience (Min Pop)"}
+      ]
+    }
+  ]
+}

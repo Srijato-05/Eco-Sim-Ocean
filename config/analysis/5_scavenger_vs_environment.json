@@ -1,0 +1,11 @@
+{
+  "experiment_name": "Scavenging: Crab Metabolism vs. Marine Snow Decay",
+  "x_param": "metabolic_rate_scav", "x_range": [0.01, 0.1, 15], "x_label": "Crab Metabolic Rate",
+  "y_param": "marine_snow_decay_rate", "y_range": [0.95, 0.999, 15], "y_label": "Marine Snow Decay Rate",
+  "dashboards": [
+    {"dashboard_name": "Scavenger_Dynamics", "graphs": [
+        {"type": "outcome", "title": "Ecosystem Outcome"},
+        {"type": "heatmap", "data_key": "scav_pop", "cmap": "YlOrBr", "title": "Final Crab Population"}
+    ]}
+  ]
+}

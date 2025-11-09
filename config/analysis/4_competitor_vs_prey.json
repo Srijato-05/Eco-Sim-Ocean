@@ -1,0 +1,11 @@
+{
+  "experiment_name": "Competition: Turtle Reproduction vs. Prey Reproduction",
+  "x_param": "reproduction_threshold_turtle", "x_range": [100, 200, 15], "x_label": "Turtle Reproduction Threshold",
+  "y_param": "reproduction_threshold_prey", "y_range": [10, 25, 15], "y_label": "Zooplankton Reproduction Threshold",
+  "dashboards": [
+    {"dashboard_name": "Herbivore_Populations", "graphs": [
+        {"type": "heatmap", "data_key": "prey_pop", "cmap": "Greens", "title": "Final Zooplankton Population"},
+        {"type": "heatmap", "data_key": "turtle_pop", "cmap": "Purples", "title": "Final Sea Turtle Population"}
+    ]}
+  ]
+}

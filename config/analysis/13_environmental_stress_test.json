@@ -1,0 +1,20 @@
+{
+  "experiment_name": "Stress Test: Plankton Growth vs. Event Frequency",
+  "x_param": "plankton_max_growth_rate",
+  "x_range": [0.8, 1.2, 15],
+  "x_label": "Plankton Max Growth Rate (Primary Energy)",
+  "y_param": "event_chance",
+  "y_range": [0.001, 0.025, 15],
+  "y_label": "Random Event Chance (Higher is more chaotic)",
+  "dashboards": [
+    {
+      "dashboard_name": "System_Sustainability",
+      "graphs": [
+        {"type": "outcome", "title": "Region of Stability"},
+        {"type": "fitness", "title": "Overall Fitness Score"},
+        {"type": "volatility", "species": "prey", "cmap": "magma", "title": "Prey Population Volatility"},
+        {"type": "oscillation", "title": "Number of Oscillation Cycles"}
+      ]
+    }
+  ]
+}

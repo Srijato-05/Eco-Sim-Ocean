@@ -1,0 +1,11 @@
+{
+  "experiment_name": "Mechanics: Immigration vs. Refuges",
+  "x_param": "spawning_event_count_max", "x_range": [20, 100, 15], "x_label": "Max Immigration Count",
+  "y_param": "refuge_hunt_debuff", "y_range": [0.1, 0.8, 15], "y_label": "Refuge Hunt Debuff",
+  "dashboards": [
+    {"dashboard_name": "Resilience_Metrics", "graphs": [
+        {"type": "heatmap", "data_key": "pred_min", "cmap": "Blues", "title": "Min Predator Population"},
+        {"type": "heatmap", "data_key": "apex_min", "cmap": "Reds", "title": "Min Apex Population"}
+    ]}
+  ]
+}

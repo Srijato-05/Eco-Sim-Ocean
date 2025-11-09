@@ -1,0 +1,19 @@
+{
+  "experiment_name": "Core: Predator Hunt Success vs. Prey Metabolism",
+  "x_param": "hunt_success_chance_predator", "x_range": [0.65, 1.0, 15], "x_label": "Predator Hunt Success Chance",
+  "y_param": "metabolic_rate_prey", "y_range": [0.15, 0.35, 15], "y_label": "Prey Metabolic Rate",
+  "dashboards": [
+    { "dashboard_name": "Core_Outcomes", "graphs": [
+        {"type": "fitness", "title": "Overall Fitness Score"},
+        {"type": "outcome", "title": "Ecosystem Outcome"},
+        {"type": "time_to_collapse", "title": "Time to Collapse (ticks)"},
+        {"type": "oscillation", "title": "Number of Oscillation Cycles"}
+    ]},
+    { "dashboard_name": "Population_Analysis", "graphs": [
+        {"type": "heatmap", "data_key": "prey_pop", "cmap": "Greens", "title": "Final Prey Population"},
+        {"type": "heatmap", "data_key": "pred_pop", "cmap": "Blues", "title": "Final Predator Population"},
+        {"type": "volatility", "species": "prey", "cmap": "magma", "title": "Prey Population Volatility"},
+        {"type": "volatility", "species": "pred", "cmap": "cividis", "title": "Predator Population Volatility"}
+    ]}
+  ]
+}

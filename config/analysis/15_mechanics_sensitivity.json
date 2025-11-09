@@ -1,0 +1,20 @@
+{
+  "experiment_name": "Mechanics: Feeding Frenzy vs. Prey Aversion",
+  "x_param": "frenzy_energy_multiplier",
+  "x_range": [1.2, 2.5, 15],
+  "x_label": "Frenzy Energy Multiplier (Higher is stronger)",
+  "y_param": "prey_aversion_boost",
+  "y_range": [0.7, 0.95, 15],
+  "y_label": "Prey Aversion Boost (Lower is stronger)",
+  "dashboards": [
+    {
+      "dashboard_name": "Mechanic_Balance",
+      "graphs": [
+        {"type": "outcome", "title": "Region of Stability"},
+        {"type": "oscillation", "title": "Number of Oscillation Cycles"},
+        {"type": "volatility", "species": "prey", "cmap": "magma", "title": "Prey Population Volatility"},
+        {"type": "volatility", "species": "pred", "cmap": "cividis", "title": "Predator Population Volatility"}
+      ]
+    }
+  ]
+}

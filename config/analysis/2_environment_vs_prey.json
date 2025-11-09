@@ -1,0 +1,17 @@
+{
+  "experiment_name": "Environment: Plankton Growth vs. Prey Lifespan",
+  "x_param": "plankton_max_growth_rate", "x_range": [0.8, 1.2, 15], "x_label": "Plankton Max Growth Rate",
+  "y_param": "max_lifespan_prey", "y_range": [80, 250, 15], "y_label": "Prey Max Lifespan (ticks)",
+  "dashboards": [
+    { "dashboard_name": "Core_Outcomes", "graphs": [
+        {"type": "fitness", "title": "Overall Fitness Score"},
+        {"type": "outcome", "title": "Ecosystem Outcome"}
+    ]},
+    { "dashboard_name": "Trophic_Levels", "graphs": [
+        {"type": "heatmap", "data_key": "prey_pop", "cmap": "Greens", "title": "Final Prey Population"},
+        {"type": "heatmap", "data_key": "pred_pop", "cmap": "Blues", "title": "Final Predator Population"},
+        {"type": "heatmap", "data_key": "apex_pop", "cmap": "Reds", "title": "Final Apex Population"},
+        {"type": "heatmap", "data_key": "scav_pop", "cmap": "YlOrBr", "title": "Final Scavenger Population"}
+    ]}
+  ]
+}

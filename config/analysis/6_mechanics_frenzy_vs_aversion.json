@@ -1,0 +1,15 @@
+{
+  "experiment_name": "Mechanics: Feeding Frenzy vs. Prey Aversion",
+  "x_param": "frenzy_energy_multiplier", "x_range": [1.2, 2.5, 15], "x_label": "Frenzy Energy Multiplier",
+  "y_param": "prey_aversion_boost", "y_range": [0.7, 0.95, 15], "y_label": "Prey Aversion Boost Factor",
+  "dashboards": [
+    {"dashboard_name": "Core_Outcomes", "graphs": [
+        {"type": "fitness", "title": "Overall Fitness Score"},
+        {"type": "outcome", "title": "Ecosystem Outcome"}
+    ]},
+    {"dashboard_name": "Predator_Prey_Volatility", "graphs": [
+        {"type": "volatility", "species": "prey", "cmap": "magma", "title": "Prey Population Volatility"},
+        {"type": "volatility", "species": "pred", "cmap": "cividis", "title": "Predator Population Volatility"}
+    ]}
+  ]
+}

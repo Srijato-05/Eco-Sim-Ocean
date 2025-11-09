@@ -1,0 +1,11 @@
+{
+  "experiment_name": "Omnivore Behavior: Plankton Eating vs. Prey Scarcity",
+  "x_param": "eating_rate_predator", "x_range": [0.1, 0.8, 15], "x_label": "Fish Plankton Eating Rate",
+  "y_param": "prey_scarcity_threshold_predator", "y_range": [200, 1500, 15], "y_label": "Prey Scarcity Threshold",
+  "dashboards": [
+    {"dashboard_name": "Predator_Survival", "graphs": [
+        {"type": "heatmap", "data_key": "pred_min", "cmap": "Blues", "title": "Min Predator Population (Resilience)"},
+        {"type": "outcome", "title": "Ecosystem Outcome"}
+    ]}
+  ]
+}

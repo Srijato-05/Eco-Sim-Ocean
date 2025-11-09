@@ -1,0 +1,11 @@
+{
+  "experiment_name": "Predator Efficiency: Energy Transfer vs. Satiation",
+  "x_param": "max_energy_transfer_efficiency_predator", "x_range": [0.7, 1.0, 15], "x_label": "Predator Energy Transfer Efficiency",
+  "y_param": "satiation_period_predator", "y_range": [30, 80, 15], "y_label": "Predator Satiation Period",
+  "dashboards": [
+    {"dashboard_name": "Predator_Performance", "graphs": [
+        {"type": "heatmap", "data_key": "pred_max", "cmap": "Blues", "title": "Max Predator Population"},
+        {"type": "outcome", "title": "Ecosystem Outcome"}
+    ]}
+  ]
+}

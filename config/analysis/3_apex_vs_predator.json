@@ -1,0 +1,13 @@
+{
+  "experiment_name": "Trophic Cascade: Apex Hunt Success vs. Predator Vision",
+  "x_param": "hunt_success_chance_apex", "x_range": [0.3, 0.7, 15], "x_label": "Seal Hunt Success Chance",
+  "y_param": "vision_radius_predator", "y_range": [20, 35, 15], "y_label": "SmallFish Vision Radius",
+  "dashboards": [
+    {"dashboard_name": "Predator_Populations", "graphs": [
+        {"type": "heatmap", "data_key": "pred_pop", "cmap": "Blues", "title": "Final SmallFish Population"},
+        {"type": "heatmap", "data_key": "apex_pop", "cmap": "Reds", "title": "Final Seal Population"},
+        {"type": "volatility", "species": "pred", "cmap": "cividis", "title": "SmallFish Population Volatility"},
+        {"type": "volatility", "species": "apex", "cmap": "plasma", "title": "Seal Population Volatility"}
+    ]}
+  ]
+}

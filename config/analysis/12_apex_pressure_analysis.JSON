@@ -1,0 +1,20 @@
+{
+  "experiment_name": "Pressure Test: Apex Hunt Success vs. Reproduction Cost",
+  "x_param": "hunt_success_chance_apex",
+  "x_range": [0.3, 0.7, 15],
+  "x_label": "Seal Hunt Success Chance",
+  "y_param": "reproduction_threshold_apex",
+  "y_range": [250, 450, 15],
+  "y_label": "Seal Reproduction Threshold (Higher is harder)",
+  "dashboards": [
+    {
+      "dashboard_name": "Trophic_Impact",
+      "graphs": [
+        {"type": "outcome", "title": "Ecosystem Outcome"},
+        {"type": "heatmap", "data_key": "apex_pop", "cmap": "Reds", "title": "Final Apex (Seal) Population"},
+        {"type": "heatmap", "data_key": "pred_pop", "cmap": "Blues", "title": "Final Predator (SmallFish) Population"},
+        {"type": "heatmap", "data_key": "prey_pop", "cmap": "Greens", "title": "Final Prey (Zooplankton) Population"}
+      ]
+    }
+  ]
+}
