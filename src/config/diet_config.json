@@ -1,0 +1,13 @@
+{
+  "SmallFish": [
+    "Zooplankton"
+  ],
+  "Seal": [
+    "SmallFish",
+    "Crab",
+    "SeaTurtle"
+  ],
+  "SeaTurtle": [
+    "Crab"
+  ]
+}
